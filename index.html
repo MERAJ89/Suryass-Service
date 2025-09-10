@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryass Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Social Media Bar (optional) -->
+    <div class="social-bar"></div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/logo.png" alt="Suryaas Services Logo" />
+        </div>
+        <button class="navbar-toggle" id="navbarToggle" aria-label="Open navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar-list" id="navbarList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.php">About Us</a></li>
+            <li><a href="photo-gallery.php">Gallery</a></li>
+            <li><a href="contact-us.php">Contact Us</a></li>
+            <li><a href="enquiry.php">Enquiry</a></li>
+            <li><a href="enquiry.php">Register</a></li>
+            <li><a href="#services">Services</a></li>
+        </ul>
+        <a href="#login" class="login-btn">Login</a>
+    </nav>
+
+    <!-- Image Scroller -->
+    <div class="image-scroller">
+        <div class="image-track" id="imageTrack">
+            <img src="electrics.jpg" alt="Service Photo">
+            <img src="plumber.jpg" alt="Service Photo">
+            <img src="electrics.jpg" alt="Service Photo">
+
+
+            <!-- Add more <img> tags for additional photos -->
+        </div>
+    </div>
+
+    <script>
+// Hamburger menu logic
+const navbarToggle = document.getElementById('navbarToggle');
+const navbarList = document.getElementById('navbarList');
+navbarToggle.addEventListener('click', function() {
+    navbarList.classList.toggle('open');
+    navbarToggle.classList.toggle('open');
+});
+
+// Close menu when a link is clicked (mobile UX)
+document.querySelectorAll('.navbar-list a').forEach(link => {
+    link.addEventListener('click', () => {
+        if (window.innerWidth <= 900) {
+            navbarList.classList.remove('open');
+            navbarToggle.classList.remove('open');
+        }
+    });
+});
+        // Auto-scroll the image track horizontally every 3 seconds
+        const track = document.getElementById('imageTrack');
+        let currentIndex = 0;
+        function scrollImages() {
+            const images = track.querySelectorAll('img');
+            if (images.length === 0) return;
+            currentIndex = (currentIndex + 1) % images.length;
+            // Each image fills the viewport, so scroll by 100vw per image
+            track.style.transform = `translateX(-${window.innerWidth * currentIndex}px)`;
+        }
+        setInterval(scrollImages, 3000);
+    </script>
+
+    <!-- About Us -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>SURYAAS CONCEPT CARE SERVICES was launched in 2017. It is the best home services provider platform in Patna.
+            This platform helps people choose the best services according to their needs like appliance repairing,
+            plumbing, carpentry, Interior Decoration, CC-Cameras, Financial Support, Suryaas Investment Project and many
+            more.</p>
+        <p>Our Vision is to provide various services to people at their doorsteps and help and empower the service
+            professionals with License Services, Insurance Services etc.</p>
+    </section>
+
+    <!-- Services -->
+
+    <section>
+        <main id="services" class="service">
+            <div class="service-item">
+                <a href="plumber.html">
+                    <img src="plumber.jpg" alt="Plumber Service" class="service-icon">
+                    <div class="service-name">Plumber Service</div>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="carpenter.html">
+                    <img src="carpenter.jpg" alt="Carpanter Service" class="service-icon">
+                    <div class="service-name">Carpanter Service</div>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="interiour.html">
+                    <img src="interiar.jpg" alt="Interior Decoration" class="service-icon">
+                    <div class="service-name">Interior Decoration Services</div>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="financial.html">
+                    <img src="finacncial.jpg" alt="Financial Support" class="service-icon">
+                    <div class="service-name">Financial Support</div>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="investment.html">
+                    <img src="investment.jpg" alt="Investment Project" class="service-icon">
+                    <div class="service-name">Suryaas Investment Project</div>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="tour.html">
+                    <img src="travel.jpg" alt="Tour & Travels" class="service-icon">
+                    <div class="service-name">Tour & Travels</div>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="signboard.html">
+                    <img src="signboard.jpg" alt="Sign Board" class="service-icon">
+                    <div class="service-name">3D Sign Board & Neon Light</div>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="suryaas-fresh.php">
+                    <img src="grocery.jpg" alt="Grocery" class="service-icon">
+                    <div class="service-name">Suryaas Grocery</div>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="packers-movers.php">
+                    <img src="packers.jpg" alt="Packers & Movers" class="service-icon">
+                    <div class="service-name">Packers & Movers</div>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="construction-services.php">
+                    <img src="construction.jpg" alt="Construction" class="service-icon">
+                    <div class="service-name">Construction Services</div>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="computer-solutions.php">
+                    <img src="computer.jpg" alt="Computer Solutions" class="service-icon">
+                    <div class="service-name">Computer Solutions</div>
+                </a>
+            </div>
+            <div class="service-item">
+                <a href="tel:+917763021973">
+                    <img src="upcoming.jpg" alt="Upcoming Services" class="service-icon">
+                    <div class="service-name">Upcoming Services</div>
+                </a>
+            </div>
+            </p>
+        </main>
+
+    </section>
+
+
+
+    <footer>
+        <p>Copyright (c) 2022 Suryaas Concept Care Services. All rights reserved.<br>
+            Designed & Developed by: <a href="http://erainfotech.in/">Era infotech</a></p>
+    </footer>
+</body>
+
+<!-- Login Modal -->
+
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <div class="login-header">
+            <img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/logo.png" alt="Logo" class="login-logo">
+            <h2>Member Login</h2>
+        </div>
+        <form id="loginForm" class="login-form">
+            <div class="input-group">
+                <label for="email">Email</label>
+                <div class="input-icon">
+                    <span class="icon-email"></span>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <div class="input-icon">
+                    <span class="icon-password"></span>
+                    <input type="password" id="password" name="password" required placeholder="Enter your password">
+                </div>
+            </div>
+            <button type="submit" class="login-submit">Login</button>
+            <div id="loginMessage" class="login-message"></div>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+
+</html>

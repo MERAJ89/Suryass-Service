@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryass Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Social Media Bar -->
+    <div class="social-bar">
+      
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/logo.png" alt="Suryaas Services Logo" />
+        </div>
+        <button class="navbar-toggle" id="navbarToggle" aria-label="Open navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar-list" id="navbarList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.php">About Us</a></li>
+            <li><a href="photo-gallery.php">Gallery</a></li>
+            <li><a href="contact-us.php">Contact Us</a></li>
+            <li><a href="enquiry.php">Enquiry</a></li>
+            <li><a href="enquiry.php">Register</a></li>
+            <li><a href="#services">Services</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Image Scroller -->
+    <div class="image-scroller">
+        <div class="image-track" id="imageTrack">
+            <img src="electrics.jpg" alt="Service Photo">
+            <img src="plumber.jpg" alt="Service Photo">
+            <img src="electrics.jpg" alt="Service Photo">
+
+
+            <!-- Add more <img> tags for additional photos -->
+        </div>
+    </div>
+
+    <script>
+     
+    </script>
+
+    <!-- About Us -->
+    <section id="about">
+    <h2>Financial Support Service</h2>
+    <p>Our Financial Support Service helps you achieve your goals with expert advice and tailored solutions. Whether you need a loan, investment guidance, or insurance, we provide transparent, reliable, and quick financial assistance.<br><br>
+    Our experienced team guides you through every step, ensuring you get the best options for your needs. We value your trust and work with integrity to secure your financial future.<br><br>
+    Choose us for hassle-free, customer-focused financial services.</p>
+
+        <h2>Our Services:</h2>
+        <ul>
+            <li>Pipe repair & replacement</li>
+        </ul>
+        <ul>
+            <li>Tap, sink & shower installation</li>
+        </ul>
+        <ul>
+            <li>Drain cleaning & unclogging</li>
+        </ul>
+        <ul>
+            <li>Water heater installation & repair</li>
+        </ul>
+        <ul>
+            <li>Bathroom & kitchen plumbing solutions</li>
+        </ul>
+        <ul>
+            <li>Emergency plumbing services</li>
+        </ul>
+
+        <button class="book-btn" id="showBookNowContainerBtn" style="display:block;margin:36px auto 0 auto;">Book Now</button>
+        <div class="book-now-container" id="bookNowContainer" style="display:none;">
+            <form class="book-now-form" id="bookNowForm">
+                <div class="form-group">
+                    <label for="bookName">Name</label>
+                    <input type="text" id="bookName" name="bookName" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="bookContact">Contact Number</label>
+                    <input type="tel" id="bookContact" name="bookContact" required pattern="[0-9]{10,15}"
+                        placeholder="Enter your contact number">
+                </div>
+                <div class="form-group">
+                    <label for="bookAddress">Address</label>
+                    <input type="text" id="bookAddress" name="bookAddress" required placeholder="Enter your address">
+                </div>
+                <div class="form-group">
+                    <label for="bookMessage">Message</label>
+                    <textarea id="bookMessage" name="bookMessage" rows="3"
+                        placeholder="Describe your plumbing issue or request"></textarea>
+                </div>
+                <button type="submit" class="book-btn" style="margin-top:10px;">Submit</button>
+                <div id="bookNowMessage" class="book-message"></div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Services -->
+
+    <footer>
+        <p>Copyright (c) 2022 Suryaas Concept Care Services. All rights reserved.<br>
+            Designed & Developed by: <a href="http://erainfotech.in/">Era infotech</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
