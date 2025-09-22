@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryass Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Social Media Bar -->
+    <div class="social-bar">
+
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/logo.png" alt="Suryaas Services Logo" />
+        </div>
+        <button class="navbar-toggle" id="navbarToggle" aria-label="Open navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+        <ul class="navbar-list" id="navbarList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.php">About Us</a></li>
+            <li><a href="photo-gallery.php">Gallery</a></li>
+            <li><a href="contact-us.php">Contact Us</a></li>
+            <li><a href="enquiry.php">Enquiry</a></li>
+            <li><a href="enquiry.php">Register</a></li>
+            <li><a href="#services">Services</a></li>
+        </ul>
+
+    </nav>
+    <!-- Register Section -->
+    <section id="register" class="register-section">
+        <h2>Register as a Service Professional</h2>
+        <form class="register-form" id="registerForm" enctype="multipart/form-data">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address" required placeholder="Enter your address">
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="landmark">Full Landmark</label>
+                    <input type="text" id="landmark" name="landmark" required placeholder="Landmark (e.g. near school)">
+                </div>
+                <div class="form-group">
+                    <label for="locality">Area/Locality</label>
+                    <input type="text" id="locality" name="locality" required placeholder="Area or Locality">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number</label>
+                    <input type="tel" id="contactNumber" name="contactNumber" required pattern="[0-9]{10,15}"
+                        placeholder="Enter your contact number">
+                </div>
+                <div class="form-group">
+                    <label for="panDetails">PAN Details</label>
+                    <input type="text" id="panDetails" name="panDetails" required placeholder="PAN Number">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="idProof">ID Proof (Aadhaar, Voter ID, etc.)</label>
+                    <input type="file" id="idProof" name="idProof" accept="image/*,application/pdf" required>
+                </div>
+                <div class="form-group">
+                    <label for="passbook">Bank Passbook (Photo/Scan)</label>
+                    <input type="file" id="passbook" name="passbook" accept="image/*,application/pdf" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="serviceType">Service Category</label>
+                <select id="serviceType" name="serviceType" required>
+                    <option value="">Select Service</option>
+                    <option value="Plumber">Plumber</option>
+                    <option value="Carpenter">Carpenter</option>
+                    <option value="Electrician">Electrician</option>
+                    <option value="Interior">Interior Designer</option>
+                    <option value="Financial">Financial Advisor</option>
+                    <option value="Investment">Investment Consultant</option>
+                    <option value="Tour">Tour & Travels</option>
+                    <option value="SignBoard">Sign Board/Neon Light</option>
+                    <option value="Grocery">Grocery Delivery</option>
+                    <option value="Packers">Packers & Movers</option>
+                    <option value="Construction">Construction</option>
+                    <option value="Computer">Computer Solutions</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="about">About You (Experience, Skills, etc.)</label>
+                <textarea id="about" name="about" rows="3" required
+                    placeholder="Describe your experience, skills, etc."></textarea>
+            </div>
+            <button type="submit" class="register-btn">Register</button>
+            <div id="registerMessageBox" class="register-message"></div>
+        </form>
+    </section>
+    </div>
+    </div>
+    </div>
+    
+<!-- 
+!footer -->
+
+
+<footer class="pro-footer">
+    <div class="footer-container">
+        <div class="footer-brand">
+            <img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/logo.png" alt="Suryaas Logo"
+                class="footer-logo">
+            <div class="footer-tagline">Your Trusted Home Services Partner</div>
+        </div>
+        <div class="footer-links">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about-us.php">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="photo-gallery.php">Gallery</a></li>
+                <li><a href="contact-us.php">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <h4>Contact Us</h4>
+            <p><strong>Phone:</strong> +91-9876543210</p>
+            <p><strong>Email:</strong> info@suryaasservices.com</p>
+            <p><strong>Address:</strong> Patna, Bihar, India</p>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#"><img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/facebook.png"
+                        alt="Facebook"></a>
+                <a href="#"><img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/twit.png" alt="Twitter"></a>
+                <a href="#"><img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/pint.png" alt="Pinterest"></a>
+                <a href="#"><img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/whatsap.png"
+                        alt="WhatsApp"></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Suryaas Concept Care Services. All rights reserved. | Designed & Developed by: mrj infotech</p>
+    </div>
+</footer>
+
+
+<script src="script.js"></script>
+<script>
+// Simple form handler (no backend, just UI feedback)
+document.getElementById('registerForm').onsubmit = function(e) {
+    e.preventDefault();
+    document.getElementById('registerMessageBox').style.color = '#388e3c';
+    document.getElementById('registerMessageBox').textContent = 'Your registration is completed.';
+    setTimeout(()=>{
+        document.getElementById('registerMessageBox').textContent = '';
+        document.getElementById('registerForm').reset();
+    }, 3500);
+}
+</script>
+</body>
+
+</html>

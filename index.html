@@ -23,12 +23,12 @@
         </button>
         <ul class="navbar-list" id="navbarList">
             <li><a href="index.html">Home</a></li>
-            <li><a href="about-us.php">About Us</a></li>
-            <li><a href="photo-gallery.php">Gallery</a></li>
-            <li><a href="contact-us.php">Contact Us</a></li>
-            <li><a href="enquiry.php">Enquiry</a></li>
-            <li><a href="enquiry.php">Register</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#enquiry">Enquiry</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="#services">Services</a></li>  
         </ul>
         <a href="#login" class="login-btn">Login</a>
     </nav>
@@ -87,9 +87,11 @@ document.querySelectorAll('.navbar-list a').forEach(link => {
             professionals with License Services, Insurance Services etc.</p>
     </section>
 
+      
     <!-- Services -->
 
     <section>
+        <h2>Book Your Service</h2>
         <main id="services" class="service">
             <div class="service-item">
                 <a href="plumber.html">
@@ -129,36 +131,36 @@ document.querySelectorAll('.navbar-list a').forEach(link => {
             </div>
             <div class="service-item">
                 <a href="signboard.html">
-                    <img src="signboard.jpg" alt="Sign Board" class="service-icon">
+                    <img src="3d sign board.jpg" alt="Sign Board" class="service-icon">
                     <div class="service-name">3D Sign Board & Neon Light</div>
                 </a>
             </div>
             <div class="service-item">
-                <a href="suryaas-fresh.php">
+                <a href="grocery.html">
                     <img src="grocery.jpg" alt="Grocery" class="service-icon">
                     <div class="service-name">Suryaas Grocery</div>
                 </a>
             </div>
             <div class="service-item">
-                <a href="packers-movers.php">
-                    <img src="packers.jpg" alt="Packers & Movers" class="service-icon">
+                <a href="packers.html">
+                    <img src="packers-movers.jpg" alt="Packers & Movers" class="service-icon">
                     <div class="service-name">Packers & Movers</div>
                 </a>
             </div>
             <div class="service-item">
-                <a href="construction-services.php">
-                    <img src="construction.jpg" alt="Construction" class="service-icon">
+                <a href="construction.html">
+                    <img src="construction.webp" alt="Construction" class="service-icon">
                     <div class="service-name">Construction Services</div>
                 </a>
             </div>
             <div class="service-item">
-                <a href="computer-solutions.php">
-                    <img src="computer.jpg" alt="Computer Solutions" class="service-icon">
+                <a href="computer.html">
+                    <img src="com-service.png" alt="Computer Solutions" class="service-icon">
                     <div class="service-name">Computer Solutions</div>
                 </a>
             </div>
             <div class="service-item">
-                <a href="tel:+917763021973">
+                <a href="upcomming.html">
                     <img src="upcoming.jpg" alt="Upcoming Services" class="service-icon">
                     <div class="service-name">Upcoming Services</div>
                 </a>
@@ -168,12 +170,141 @@ document.querySelectorAll('.navbar-list a').forEach(link => {
 
     </section>
 
+      <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <h2>Our Service Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="plumber.jpg" alt="Plumber Service">
+                    <div class="gallery-caption">Plumber Service</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="carpenter.jpg" alt="Carpanter Service">
+                    <div class="gallery-caption">Carpanter Service</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="interiar.jpg" alt="Interior Decoration Services">
+                    <div class="gallery-caption">Interior Decoration Services</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="finacncial.jpg" alt="Financial Support">
+                    <div class="gallery-caption">Financial Support</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="investment.jpg" alt="Suryaas Investment Project">
+                    <div class="gallery-caption">Suryaas Investment Project</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="travel.jpg" alt="Tour & Travels">
+                    <div class="gallery-caption">Tour & Travels</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="3d sign board.jpg" alt="3D Sign Board & Neon Light">
+                    <div class="gallery-caption">3D Sign Board & Neon Light</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="grocery.jpg" alt="Suryaas Grocery">
+                    <div class="gallery-caption">Suryaas Grocery</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="packers-movers.jpg" alt="Packers & Movers">
+                    <div class="gallery-caption">Packers & Movers</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="construction.webp" alt="Construction Services">
+                    <div class="gallery-caption">Construction Services</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="com-service.png" alt="Computer Solutions">
+                    <div class="gallery-caption">Computer Solutions</div>
+                </div>
+              
+            </div>
+        </section>
 
 
-    <footer>
-        <p>Copyright (c) 2022 Suryaas Concept Care Services. All rights reserved.<br>
-            Designed & Developed by: <a href="http://erainfotech.in/">Era infotech</a></p>
+
+
+    <!-- Fixed WhatsApp Icon -->
+    <a href="https://wa.me/919065044801" class="fixed-whatsapp" target="_blank" title="Chat on WhatsApp">
+        <img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/whatsap.png" alt="WhatsApp" />
+    </a>
+    <!-- Contact Us Section (before footer) -->
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <label for="contactName">Name</label>
+                <input type="text" id="contactName" name="contactName" required placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="contactAddress">Address</label>
+                <input type="text" id="contactAddress" name="contactAddress" required placeholder="Enter your address">
+            </div>
+            <div class="form-group">
+                <label for="contactNumber">Contact Number</label>
+                <input type="tel" id="contactNumber" name="contactNumber" required pattern="[0-9]{10,15}" placeholder="Enter your contact number">
+            </div>
+            <div class="form-group">
+                <label for="contactMessage">Message</label>
+                <textarea id="contactMessage" name="contactMessage" rows="3" required placeholder="Type your message here"></textarea>
+            </div>
+            <button type="submit" class="contact-btn">Submit</button>
+            <div id="contactMessageBox" class="contact-message"></div>
+        </form>
+    </section>
+
+    <footer class="pro-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/logo.png" alt="Suryaas Logo" class="footer-logo">
+                <div class="footer-tagline">Your Trusted Home Services Partner</div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.php">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="photo-gallery.php">Gallery</a></li>
+                    <li><a href="contact-us.php">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><strong>Phone:</strong> +91-9876543210</p>
+                <p><strong>Email:</strong> info@suryaasservices.com</p>
+                <p><strong>Address:</strong> Patna, Bihar, India</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/twit.png" alt="Twitter"></a>
+                    <a href="#"><img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/pint.png" alt="Pinterest"></a>
+                    <a href="https://wa.me/919065044801"><img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/whatsap.png" alt="WhatsApp"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Suryaas Concept Care Services. All rights reserved. | Designed & Developed by: mrj infotech</p>
+        </div>
     </footer>
+<script>
+// Contact form handler (UI feedback only)
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+    contactForm.onsubmit = function(e) {
+        e.preventDefault();
+        document.getElementById('contactMessageBox').style.color = '#388e3c';
+        document.getElementById('contactMessageBox').textContent = 'Thank you for contacting us! We will get back to you soon.';
+        setTimeout(()=>{
+            document.getElementById('contactMessageBox').textContent = '';
+            contactForm.reset();
+        }, 3000);
+    }
+}
+</script>
 </body>
 
 <!-- Login Modal -->
@@ -183,7 +314,7 @@ document.querySelectorAll('.navbar-list a').forEach(link => {
         <span class="close" id="closeModal">&times;</span>
         <div class="login-header">
             <img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/logo.png" alt="Logo" class="login-logo">
-            <h2>Member Login</h2>
+            <h2>User Login</h2>
         </div>
         <form id="loginForm" class="login-form">
             <div class="input-group">
@@ -207,6 +338,50 @@ document.querySelectorAll('.navbar-list a').forEach(link => {
 </div>
 <script src="script.js"></script>
 
+
+<script>
+// Animate modal open/close
+const loginModal = document.getElementById('loginModal');
+const loginBtn = document.querySelector('.login-btn');
+const closeModal = document.getElementById('closeModal');
+loginBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    loginModal.classList.add('show');
+    loginModal.style.display = 'block';
+});
+closeModal.onclick = function() {
+    loginModal.classList.remove('show');
+    setTimeout(()=>{ loginModal.style.display = 'none'; }, 400);
+    document.getElementById('loginMessage').textContent = '';
+}
+window.onclick = function(event) {
+    if (event.target == loginModal) {
+        loginModal.classList.remove('show');
+        setTimeout(()=>{ loginModal.style.display = 'none'; }, 400);
+        document.getElementById('loginMessage').textContent = '';
+    }
+}
+
+// Login form handler with scroll to service section
+document.getElementById('loginForm').onsubmit = function(e) {
+        e.preventDefault();
+        // Accept any email and password
+        document.getElementById('loginMessage').style.color = '#388e3c';
+        document.getElementById('loginMessage').textContent = 'Login successful!';
+            setTimeout(()=>{
+                loginModal.classList.remove('show');
+                setTimeout(()=>{
+                    loginModal.style.display = 'none';
+                    // Hide login button
+                    const loginBtn = document.querySelector('.login-btn');
+                    if(loginBtn) loginBtn.style.display = 'none';
+                    // Scroll to service section
+                    const serviceSection = document.getElementById('services');
+                    if(serviceSection) serviceSection.scrollIntoView({behavior:'smooth'});
+                }, 400);
+            }, 1000);
+}
+</script>
 </body>
 
 </html>

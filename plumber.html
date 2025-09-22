@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +11,7 @@
 <body>
     <!-- Social Media Bar -->
     <div class="social-bar">
-      
+
     </div>
     <!-- Navigation -->
     <nav class="navbar">
@@ -48,10 +47,6 @@
         </div>
     </div>
 
-    <script>
-     
-    </script>
-
     <!-- About Us -->
     <section id="about">
         <h2>The Plumber Service</h2>
@@ -86,7 +81,8 @@
             <li>Emergency plumbing services</li>
         </ul>
 
-        <button class="book-btn" id="showBookNowContainerBtn" style="display:block;margin:36px auto 0 auto;">Book Now</button>
+        <button class="book-btn" id="showBookNowContainerBtn" style="display:block;margin:36px auto 0 auto;">Book
+            Now</button>
         <div class="book-now-container" id="bookNowContainer" style="display:none;">
             <form class="book-now-form" id="bookNowForm">
                 <div class="form-group">
@@ -116,11 +112,88 @@
 
     <!-- Services -->
 
-    <footer>
-        <p>Copyright (c) 2022 Suryaas Concept Care Services. All rights reserved.<br>
-            Designed & Developed by: <a href="http://erainfotech.in/">Era infotech</a></p>
-    </footer>
     <script src="script.js"></script>
+    <script>
+        // SheetDB integration for Book Now form
+        const bookNowForm = document.getElementById('bookNowForm');
+        if (bookNowForm) {
+            bookNowForm.onsubmit = function(e) {
+                e.preventDefault();
+                const formData = {
+                    bookName: document.getElementById('bookName').value,
+                    bookContact: document.getElementById('bookContact').value,
+                    bookAddress: document.getElementById('bookAddress').value,
+                    bookMessage: document.getElementById('bookMessage').value
+                };
+                fetch('https://sheetdb.io/api/v1/ewst9i2yiymi7', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ data: formData })
+                })
+                .then(response => {
+                    if (response.ok) {
+                        document.getElementById('bookNowMessage').style.color = '#388e3c';
+                        document.getElementById('bookNowMessage').textContent = 'Your booking has been submitted!';
+                        bookNowForm.reset();
+                    } else {
+                        throw new Error('Network response was not ok');
+                    }
+                })
+                .catch(() => {
+                    document.getElementById('bookNowMessage').style.color = '#d32f2f';
+                    document.getElementById('bookNowMessage').textContent = 'There was an error submitting your booking. Please try again.';
+                });
+            }
+        }
+    </script>
+
+    <!-- Fixed WhatsApp Icon -->
+    <a href="https://wa.me/919065044801" class="fixed-whatsapp" target="_blank" title="Chat on WhatsApp">
+        <img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/whatsap.png" alt="WhatsApp" />
+        <span class="whatsapp-number">+91 90650 44801</span>
+    </a>
+    <footer class="pro-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/logo.png" alt="Suryaas Logo"
+                    class="footer-logo">
+                <div class="footer-tagline">Your Trusted Home Services Partner</div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about-us.php">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="photo-gallery.php">Gallery</a></li>
+                    <li><a href="contact-us.php">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><strong>Phone:</strong> +91- 9065044801</p>
+                <p><strong>Email:</strong> info@suryaasservices.com</p>
+                <p><strong>Address:</strong> Patna, Bihar, India</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/facebook.png"
+                            alt="Facebook"></a>
+                    <a href="#"><img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/twit.png"
+                            alt="Twitter"></a>
+                    <a href="#"><img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/pint.png"
+                            alt="Pinterest"></a>
+                    <a href="9065044801"><img src="SURYAAS CONCEPT CARE SERVICES PRIVATE LIMITED_files/whatsap.png"
+                            alt="WhatsApp"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Suryaas Concept Care Services. All rights reserved. | Designed & Developed by: mrj infotech
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>
